@@ -1,117 +1,164 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibOS.ai – The Missing Link for Humanoid Robots</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
-            color: #f0f0f0;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            background-color: #111;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #00ffe1;
-            text-transform: ;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-        nav a {
-            color: #f0f0f0;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00ffe1;
-        }
-        .cta-button {
-            background-color: #00ffe1;
-            color: #000;
-            padding: 0.6rem 1.2rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-        .hero {
-            text-align: center;
-            padding: 5rem 2rem;
-            background: radial-gradient(circle at center, #222 0%, #0f0f0f 100%);
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #00ffe1;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            color: #ccc;
-        }
-        .buttons .btn {
-            background: #00ffe1;
-            color: #000;
-            padding: 0.75rem 1.5rem;
-            margin: 0 0.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #111;
-            color: #888;
-        }
-        footer a {
-            color: #00ffe1;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibOS – The Missing Link for Humanoid Robots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0c0c0c;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #0f0f0f;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ccc;
+    }
+    .cta-btn {
+      background: #00fff7;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .cta-btn:hover {
+      box-shadow: 0 0 12px #00fff7;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: radial-gradient(circle at center, #1a1a1a, #0c0c0c);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #00fff7;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #aaa;
+      font-family: 'Inter', sans-serif;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2,
+    .card h3 {
+      color: #00fff7;
+    }
+    .section p,
+    .card p {
+      font-family: 'Inter', sans-serif;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 0 10px rgba(0, 255, 247, 0.1);
+    }
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background: #0f0f0f;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">vibOS</div>
-        <nav>
-            <ul>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#usecases">Use Cases</a></li>
-                <li><a href="#developers">Developers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#request" class="cta-button">Request Early Access</a>
-    </header>
-    <section class="hero">
-        <h1>The Missing Link for Humanoid Robots</h1>
-        <p>Voice. Intelligence. Behavior.</p>
-        <div class="buttons">
-            <a href="#request" class="btn">Request Early Access</a>
-            <a href="#demo" class="btn">Watch Demo</a>
-        </div>
-    </section>
-    <footer>
-        <p>Contact: <a href="mailto:info@vibos.ai">info@vibos.ai</a></p>
-    </footer>
+  <header>
+    <div class="logo" style="font-weight:bold; font-size: 1.5rem; color:#00fff7">vibOS</div>
+    <nav>
+      <a href="#product">Product</a>
+      <a href="#layers">Layers</a>
+      <a href="#audience">Who It's For</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cta-btn">Request Early Access</button>
+  </header>
+
+  <section class="hero">
+    <h1>The Missing Link for Humanoid Robots</h1>
+    <p>Voice. Intelligence. Behavior.</p>
+    <div style="margin-top: 2rem;">
+      <button class="cta-btn">Request Early Access</button>
+      <button class="cta-btn" style="margin-left: 1rem;">Watch Demo</button>
+    </div>
+  </section>
+
+  <section id="product" class="section">
+    <h2>What is VibOS?</h2>
+    <p>VibOS gives robots the ability to talk, think, and act more like people.</p>
+  </section>
+
+  <section id="layers" class="section">
+    <h2>Three Core Layers</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Voice Layer</h3>
+        <p>Robots can speak clearly and show emotion with their voice.</p>
+      </div>
+      <div class="card">
+        <h3>Intelligence Layer</h3>
+        <p>VibOS helps robots understand, learn, and make smart choices.</p>
+      </div>
+      <div class="card">
+        <h3>Behavior Layer</h3>
+        <p>Robots remember things and show unique personalities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="audience" class="section">
+    <h2>Who It's For</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Robotics Startups</h3>
+        <p>Add speech, memory, and intelligence to your robot faster.</p>
+      </div>
+      <div class="card">
+        <h3>AI Developers</h3>
+        <p>Build tools and features that work with VibOS.</p>
+      </div>
+      <div class="card">
+        <h3>Investors</h3>
+        <p>Support the future of human-like robots and AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Get in Touch</h2>
+    <p>Email us at <a href="mailto:info@vibos.ai" style="color:#00fff7">info@vibos.ai</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VibOS.ai &nbsp;|&nbsp; All rights reserved</p>
+  </footer>
 </body>
 </html>
 <!-- End of HTML Document -->
